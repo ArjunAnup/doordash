@@ -1,5 +1,258 @@
-header{
-    background-image:url(IMG/hero_desktop.png);
-    height: 100vh;
-    width: 100vw;
+
+body{
+    margin: 0;
 }
+.full{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.head{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png);
+    height: 650px;
+}
+
+.head1{
+    margin-top: calc(var(--usage-space-xx-small)*5);
+    margin-bottom: calc(var(--usage-space-xx-small)*5);
+    display: flex;
+    justify-content: center;
+    top: 0;
+    margin-top: 25px;
+
+    position: absolute;
+}
+.headlogo{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.logowrite{
+    line-height: 0;
+    margin-left: 10px;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.containerwritting{
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: -10px; */
+    margin-top: -10px;
+    margin-left: 5px;
+    
+}
+.containerwritting h1{
+    font-family: "TTNormsProCond-Blk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 900;
+    color: rgb(250, 246, 246);
+    text-align: center;
+    max-width: 750px;
+    font-size: 40px;
+    margin-left: -15px;
+    
+}
+.header_right{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    margin-top: var(--usage-space-medium);
+    z-index: 1;
+}.header_right1{
+    flex: 1 1 0%;
+    padding-right: var(--usage-space-large);
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--usage-space-x-small);
+}
+a{
+    position: relative;
+    max-width: 100%;    
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 0px;
+    display: inline-flex;
+    min-height: 40px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    background-color: #eb1700ff;
+    color: #fff;
+    font-family: normal;
+    
+}
+.header_right1 span{
+    display: block;
+    flex-grow: 1;
+    max-width: 100%;
+    transition: opacity 0.15s ease-in-out;
+    opacity: 1;
+    padding-inline: 12px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "normal";
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    margin-bottom: 2px;
+}
+.header_right1 a:last-child {
+    background-color: #fff;
+    color: #606060ff;
+}
+.header_right1 a span {
+    display: block;
+    flex-grow: 1;
+    max-width: 100%;
+    
+    opacity: 1;
+    padding-inline: 12px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "boldf";
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    margin-bottom: 2px;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: -15px;
+}
+.base{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+}
+.base1{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 5px;
+}
+.base2{
+    display: flex;
+    background: white;
+    width: 408px;
+    height: 56px;
+    border-radius: 100px;
+}
+.delivery{
+    border-radius: var(--usage-space-x-large);
+    padding-top: var(--usage-space-x-small);
+    padding-bottom: var(--usage-space-x-small);
+    padding-right: var(--usage-space-x-small);
+    padding-left: calc(var(--usage-space-xx-small) * 5);
+    font-family: var(--usage-type-body-medium-default-font-family);
+    font-size: var(--usage-type-body-medium-default-size);
+    line-height: var(--usage-type-body-medium-default-line-height);
+    letter-spacing: var(--usage-type-body-medium-default-letter-spacing);
+    font-weight: var(--usage-type-body-medium-default-font-weight);
+    color: var(--usage-color-text-default);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    border-radius: var(--comp-border-radius-field-medium) var(--comp-border-radius-field-medium) var(--comp-border-radius-field-medium) var(--comp-border-radius-field-medium);
+    z-index: 1;
+    padding: calc(var(--usage-space-small) / 2) var(--usage-space-small);
+    border: none;
+    box-shadow: inset 0 0 0 var(--usage-border-width-default) var(--comp-color-field-border-default); 
+    background-color: var(--comp-color-field-background-default);
+}
+.location{
+    max-width: 100%;
+    margin-right: var(--usage-space-small);
+}
+.location1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innertxt{
+    font-family: var(--usage-type-body-medium-default-font-family);
+    font-size: var(--usage-type-body-medium-default-size);
+    line-height: var(--usage-type-body-medium-default-line-height);
+    letter-spacing: var(--usage-type-body-medium-default-letter-spacing);
+    font-weight: var(--usage-type-body-medium-default-font-weight);
+    width: 100%;
+    border: none;
+    outline: none;
+    flex: 1 1 100%;
+    display: flex;
+    background: inherit;
+    color: currentcolor;
+    appearance: none;
+    margin: 0px;
+    padding: 0px;
+}
+.innertxt{
+            border-radius: 32px;
+        padding: 8px 8px 8px 20px;
+        display: flex;
+        align-items: center;
+        background-color: white;
+    }
+    .innertxt input{
+        border: none;
+        outline: 0;
+
+    }
+
+.arrow1{
+    max-width: 100%;
+    margin-right: 0;
+}
+.arrow1 button{
+        position: relative;
+        max-width: 100%;
+        margin: 0;
+        display: inline-flex;
+        height: 40px;
+        border-radius: 999px;
+        text-align: center;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        background-color: #eb1700 ;
+        color: white;
+        border: none;
+        margin-top: 6px;
+        margin-right: 10px;
+
+
+    }
+
