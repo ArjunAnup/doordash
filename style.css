@@ -1,4 +1,12 @@
 
+@font-face{
+    font-family: "doorbold";
+    src: url(fonts/TTNorms-Bold.woff2);
+}
+@font-face{
+    font-family: "doornormal";
+    src: url(fonts/TTNorms-Medium.woff2);
+}
 body{
     margin: 0;
 }
@@ -18,14 +26,11 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
     background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png);
     height: 650px;
 }
 
 .head1{
-    margin-top: calc(var(--usage-space-xx-small)*5);
-    margin-bottom: calc(var(--usage-space-xx-small)*5);
     display: flex;
     justify-content: center;
     top: 0;
@@ -54,10 +59,13 @@ body{
 .containerwritting{
     display: flex;
     justify-content: center;
-    /* margin-bottom: -10px; */
+    margin-bottom: -10px;
     margin-top: -10px;
     margin-left: 5px;
     
+}
+.transform{
+    transform: translateY(32px);
 }
 .containerwritting h1{
     font-family: "TTNormsProCond-Blk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -74,20 +82,18 @@ body{
     left: 0px;
     right: 0px;
     top: 0px;
-    margin-top: var(--usage-space-medium);
     z-index: 1;
-}.header_right1{
+}
+.header_right1{
     flex: 1 1 0%;
-    padding-right: var(--usage-space-large);
     display: flex;
     justify-content: flex-end;
-    gap: var(--usage-space-x-small);
+    
 }
 a{
     position: relative;
     max-width: 100%;    
     margin-top: 20px;
-    margin-right: 20px;
     padding: 0px;
     display: inline-flex;
     min-height: 40px;
@@ -100,6 +106,8 @@ a{
     background-color: #eb1700ff;
     color: #fff;
     font-family: normal;
+    text-decoration: none;
+    transform: translateY(-20px);
     
 }
 .header_right1 span{
@@ -148,6 +156,9 @@ a{
     width: 100%;
     margin-top: -15px;
 }
+.address2{
+      padding: 8px 8px 8px 24px;
+}
 .base{
     display: flex;
         flex-direction: column;
@@ -157,11 +168,11 @@ a{
 }
 .base1{
     display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
 }
 .base2{
     display: flex;
@@ -169,33 +180,21 @@ a{
     width: 408px;
     height: 56px;
     border-radius: 100px;
+    box-sizing: border-box;
+    padding: 8px 8px 8px 24px;
+    margin: -10px 0px 0px -15px;
 }
 .delivery{
-    border-radius: var(--usage-space-x-large);
-    padding-top: var(--usage-space-x-small);
-    padding-bottom: var(--usage-space-x-small);
-    padding-right: var(--usage-space-x-small);
-    padding-left: calc(var(--usage-space-xx-small) * 5);
-    font-family: var(--usage-type-body-medium-default-font-family);
-    font-size: var(--usage-type-body-medium-default-size);
-    line-height: var(--usage-type-body-medium-default-line-height);
-    letter-spacing: var(--usage-type-body-medium-default-letter-spacing);
-    font-weight: var(--usage-type-body-medium-default-font-weight);
-    color: var(--usage-color-text-default);
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    width: 100%;
-    border-radius: var(--comp-border-radius-field-medium) var(--comp-border-radius-field-medium) var(--comp-border-radius-field-medium) var(--comp-border-radius-field-medium);
+    width: 24px;
     z-index: 1;
-    padding: calc(var(--usage-space-small) / 2) var(--usage-space-small);
     border: none;
-    box-shadow: inset 0 0 0 var(--usage-border-width-default) var(--comp-color-field-border-default); 
-    background-color: var(--comp-color-field-background-default);
 }
 .location{
     max-width: 100%;
-    margin-right: var(--usage-space-small);
+   
 }
 .location1{
     display: flex;
@@ -203,11 +202,7 @@ a{
     align-items: center;
 }
 .innertxt{
-    font-family: var(--usage-type-body-medium-default-font-family);
-    font-size: var(--usage-type-body-medium-default-size);
-    line-height: var(--usage-type-body-medium-default-line-height);
-    letter-spacing: var(--usage-type-body-medium-default-letter-spacing);
-    font-weight: var(--usage-type-body-medium-default-font-weight);
+
     width: 100%;
     border: none;
     outline: none;
@@ -220,16 +215,20 @@ a{
     padding: 0px;
 }
 .innertxt{
-            border-radius: 32px;
-        padding: 8px 8px 8px 20px;
-        display: flex;
-        align-items: center;
-        background-color: white;
+    border-radius: 32px;
+    padding: 8px 8px 8px 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
     }
-    .innertxt input{
-        border: none;
-        outline: 0;
-
+.innertxt input{
+    border: none;
+    outline: 0;
+    font-family: "doornormal";
+    height: 22px;
+    margin-left: -10px;
+    width: 292px;
+    font-size: 16px;
     }
 
 .arrow1{
@@ -237,22 +236,1056 @@ a{
     margin-right: 0;
 }
 .arrow1 button{
-        position: relative;
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    display: inline-flex;
+    height: 40px;
+    border-radius: 999px;
+    text-align: center;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eb1700 ;
+    color: white;
+    border: none;
+    }
+    .sign_address{
+    margin-top: 16px;
+    min-height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    border: none;
+    padding-inline: 12px;
+    gap: 4px;
+    }
+    .sign_address span{
+        display: block;
+        flex-grow: 1;
         max-width: 100%;
-        margin: 0;
-        display: inline-flex;
-        height: 40px;
-        border-radius: 999px;
-        text-align: center;
-        width: 40px;
+        opacity: 1;
+        font-family: "boldf";
+        font-size: 14px;
+    }
+    .sign_address span span{
+        max-width: 100%;
+        display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #eb1700 ;
-        color: white;
-        border: none;
-        margin-top: 6px;
-        margin-right: 10px;
-
-
+        flex-direction: row;
+        
     }
+    .sign_address span span span{
+        flex-grow: 1;
+        flex-shrink: 2;
+        min-width: 0px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .sign_address span span span span{
+        width: 16;
+        height: 16;
+        fill: none;
+    }
+    .sicDh {
+    position: relative;
+    max-width: 100%;
+    margin-top: 16px;
+    padding: 1px 6px 1px 6px;
+    border-radius: 100px;
+    display: inline-flex;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    user-select: none;
+    text-decoration: none;
+    text-align: center;
+    height: 32px;
+    }
+    .jONJUs {
+    display: block;
+    flex-grow: 1;
+    max-width: 100%;
+    transition: opacity 0.15s ease-in-out;
+    opacity: 1;
+    padding: 0px 12px 0px 12px;
+    }
+    .bKlOJC {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    }
+    .kMnvDH {
+    flex-grow: 1;
+    flex-shrink: 2;
+    min-width: 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+.hJzGat {
+    width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iIiQzo {
+    flex-shrink: 0;
+}
+.kXCksQ {
+    -webkit-box-flex: 2;
+    flex-grow: 2;
+    min-width: 0px;
+    display: flex;
+    justify-content: center;
+}
+.kXCksQ > * {
+    width: 100%;
+}
+.itAsYp {
+    color: currentcolor;
+    text-transform: none;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+    font-family: "doorbold";
+}
+.secondset{
+    max-width: 100%;
+    height: 636px;
+    width: 1104px;
+    margin: 0px 168px;
 
+}
+.secondset1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 96px 0px;
+    padding: 12px;
+    max-width: 100%;
+}
+.secondset2{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+
+}
+.bike{
+    display: flex;
+    width: 320px;
+    height: 420px;
+    min-width: 360px;
+    flex-flow: column;
+    padding: 16px;
+}
+.bike1{
+    height: 154px;
+    width: 154px;
+    margin-right: 64px;
+}
+.bikecnt{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 250px;
+}
+.bikecnt1{
+    max-width: 100%;
+    display: block;
+}
+.bikebutton{
+    margin: 1.2px 0px 0px 0px;
+    padding: 1px 6px;
+    border: 1.6px;
+    outline: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.bikewritting{
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: #EB1700;
+    font-family: "doorbold";
+    font-size: 18px;
+}
+.bikewritting2{
+    flex-shrink: 0;
+}
+.para_1{
+    text-transform: none;
+    text-align: center;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(25, 25, 25) ;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    line-height: 40px;
+    font-family: "doorbold";
+
+}
+.para_2{
+    text-transform: none;
+    text-align: center;
+    display: block;
+    margin: 8px 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+    font-family: "doornormal";
+}
+.bikeimg{
+    margin-left: 55px;
+}
+.doorarrow{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.merchant{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 420px;
+    min-width: 360px;
+    padding: 16px;
+    transform: translateX(-32px);
+}
+.merchant1{
+    display: flex;
+    justify-content: center;
+    margin: 0px 64px 0px 0px;
+    height: 154px;
+    width: 264px;
+}
+.merchant1 img{
+    height: 154px;
+    width: 154px;
+}
+.merchant_headcnt{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 250px;
+}
+.merchant_para{
+    max-width: 100%;
+    display: block;
+}
+.mer_head1{
+    text-transform: none;
+    text-align: center;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(25, 25, 25);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    line-height: 40px;
+    font-family: "doorbold";
+}
+.mer_head2{
+    text-transform: none;
+    text-align: center;
+    display: block;
+    margin: 8px 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+    font-family: "doornormal";
+}
+.merchant_button{
+    border: 0px;
+    padding: 0px;
+    margin: 12px 0px 0px 0px;
+    outline: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 13.3333px;
+    font-stretch: 100%;
+    justify-content: center;
+}
+.merchant_button_txt{
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    text-decoration-color: rgb(235, 23, 0);
+    letter-spacing: -0.01px;
+    font-weight: 700;
+    line-height: 22px;
+    box-sizing: border-box;
+    color: rgb(235, 23, 0);
+    font-family: "doorbold";
+    font-size: 18px;
+}
+.experience{
+    display: flex;
+    width: 360px;
+    height: 420px;
+    min-width: 360px;
+    flex-flow: column;
+    padding: 16px;
+    transform: translateX(-64px);
+}
+.experience1{
+    display: flex;
+    justify-content: center;
+    margin: 0px 64px 0px 0px;
+    height: 164px;
+    width: 264px;
+} 
+.experience1 img{
+    height: 154px;
+    width: 154px;
+
+}
+.experience_cnt{
+    display: flex;
+    flex-flow :column;
+    height: 250px;
+    max-width: 250px;
+    box-sizing: border-box;               
+}
+.experience_txtcnt{
+    max-width: 100%;
+    display: block;
+}
+.experience_txt1{
+    text-transform: none;
+    text-align: center;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(25, 25, 25);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    line-height: 40px;
+    font-family: "doorbold";
+    margin-top: -10px;
+}
+.experience_txt2{
+    text-transform: none;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    height: 72px;
+    width: 250px;
+    margin: 8px 0px 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+    font-family: "doornormal";
+}
+.experience_button{
+    border: 0px;
+    padding: 0px;
+    margin: 12px 0px 0px 0px;
+    justify-content: center;
+    outline: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 13.3333px;
+    height: 22px;
+    width: 250px;
+    font-family: "doorbold";
+}
+.button_txt{
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(235, 23, 0);
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.01px;
+    line-height: 22px;
+    height: 22px;
+    width: 99.525px;
+}
+.sec_2{
+    width: 100%;
+
+}
+.sec_2_1{
+    width: 100%;
+}
+.sec_2_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -60px;
+    padding: 20px;
+    min-width: 90%;
+    transform: translateY(12px);
+}
+.sec_3{
+    display: flex;
+    flex-direction: row;
+    /* align-content: space-between; */
+    gap: 60px;
+    max-width: 1184px;
+    row-gap: 60px;
+    transform: translateY(-12PX);
+
+}
+.sec_4{
+    max-width: 400px;
+    margin: 107px 0px;
+    height: 290px;
+}
+.sec_4_1{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: left;
+    width: 400px;
+    height: 290px;
+}
+.sec_4head{
+    max-width: 90%;
+    margin: 20px 0px 0px 0px;
+    text-transform: none;
+    display: block;
+    padding: 0px;
+    font-family: "doorbold";
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    text-align: left;
+    box-sizing: border-box;
+    height: 80px;
+    width: 360px;
+    line-height: 1;
+
+
+
+}
+.sec_4head2{
+    margin-top: 20px;
+    text-transform: none;
+    display: block;
+    padding: 0px;
+    font-family: "doorbold";
+    text-align: left;
+    font-weight: 700;
+    height: 24px;
+    width: 400px;
+    letter-spacing: -0.01px;
+    line-height: 24px;
+    font-size: 20px;
+
+
+}
+.sec_4txt{
+    margin-top: 10px;
+    text-transform: none;
+    display: block;
+    text-align: left;
+    font-family: "doornormal";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    line-height: 22px;
+    width: 400px;
+    height: 66px;
+}
+.find_button{
+    margin-top: 30px;
+    display: block;
+    height: 40px;
+    width: 400px;
+
+}
+.findbutton{
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: inline-flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(235, 23, 0);
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-image-repeat: stretch;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    max-height: 100%;
+    min-height: 40px;
+    width: 146px;
+    font-family: "doornormal";  
+    text-decoration: none; 
+  
+
+    
+}
+.find_button1{
+      display: block;
+    flex-grow: 1;
+    max-width: 100%;
+    opacity: 1;
+    padding: 0px 12px;
+    height: 22px;
+    width: 146px;
+    box-sizing: border-box;
+}
+    
+.find_button2{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 22px;
+    width: 122px;
+    text-align: center;
+}
+.findbutton_2{
+    flex-grow: 2;
+    min-width: 0px;
+    justify-content: center;
+    height: 22px;
+    width: 122px;
+    display: flex;
+    cursor: pointer;
+
+}
+.find_button3{
+    text-transform: none;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+    font-family: "doornormal";
+    height: 22px;
+    width: 122px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    box-sizing: border-box;
+
+}
+.photo1{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.secimg2{
+    width: 100%;
+    display: block;
+    height: 604px;
+}
+.secimg2cnt{
+    background-color: rgb(254, 241, 238);
+    flex-direction: row;
+    justify-content: center;
+    padding: 80px 20px 20px 20px;
+    align-items: center;
+    display: flex;
+    min-width: 90%;
+    height: 100%;
+}
+.secimg2cnt2{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    max-width: 1184px;
+    height: 504px;
+    box-sizing: border-box;
+    transform: translateY(-50px);
+}
+.lazylogopht{
+    width: 724px;
+    height: 500px;
+}
+.dashpassdelivery{
+    max-width: 400px;
+    margin: 124px 0px;
+    box-sizing: border-box;
+    display: block;
+    max-width: 400px;
+    height: 256px;
+}
+.dashdeliverycnt{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 256px;
+    width: 400px;
+    text-align: left;
+
+}
+.dashdeliveryhead{
+    margin: 20px 0px 0px;
+    box-sizing: border-box;
+    display: block;
+    font-family: "doorbold";
+    font-size: 40px;
+    font-weight: 700;
+    height: 80px;
+    width: 360%;
+    letter-spacing: -0.01px;
+    line-height: 40px;
+    margin-block-start: 20px;
+    max-width: 90%;
+    text-align: left;
+}
+.dashdeliverycntpara{
+    display: block;
+    font-family: "doornormal";
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    letter-spacing: -0.01px;
+    line-height: 22px;                                                                                                                                                               
+    margin-top: 20px;
+    text-align: left;
+    width: 400px;
+    height: 66px;
+}
+.dashbutton{
+    margin-top: 30px;
+    display: block;
+    box-sizing: border-box;
+    text-align: left;
+    height: 40px;
+    width: 400px;
+
+}
+.dashbutton1{
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: inline-flex;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(235, 23, 0);
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    width: 127px;
+    height: 40px;
+}
+.dash_button1{
+    display: block;
+    flex-grow: 1;
+    max-width: 100%;
+    opacity: 1;
+    margin: 0px 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    width: 127px;
+    height: 22px;
+}
+.dash_button2{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;                 
+    height: 22px;
+    width: 103px;
+    
+}
+.dash_button3{
+    flex-grow: 2;
+    min-width: 0px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    height: 22px;
+    width: 103px;
+    cursor: pointer;
+
+}
+.dash_buttontxt{
+    text-transform: none;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+    font-family: "doornormal";
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    font-weight: 700;
+    height: 22px;
+    width: 103px;
+    text-decoration-style: solid;
+    text-decoration-line: none; 
+     
+}
+.grocery{
+    background: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png)center center / cover;
+    position: relative;
+    height: 600px;
+    background-attachment: scroll;
+    background-clip: border-box;
+    display: block;
+    width: 100%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.groceryparacnt{
+    background-color: rgba(30, 30, 30, 0.6);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;          
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.grocerycnt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 146px 0px;
+    max-width: 550px;
+    box-sizing: border-box;
+}
+.groceryhead{
+    max-width: 90%;
+    color: white;
+    margin: 20px 0px 0px;
+    text-align: center;
+    filter: drop-shadow(rgba(0, 0, 0, 0, 0.2) 0px 2px 8px);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.01px;
+    font-family: "doorbold";
+    text-transform: none;
+}
+.groceryhead2{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    filter: drop-shadow(rgba(0, 0, 0, 0, 0.2) 0px 2px 8px);
+    box-sizing: border-box;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-decoration-line: none;
+    font-family: "doorbold";
+
+}
+.grocerytxt{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    filter: drop-shadow(_rgba(0, 0, 0, 0, 0.2) 0px 2px 8px);
+    display: block;
+    padding: 0px;
+    font-family: "doornormal";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-transform: none;
+    text-decoration-color: rgb(255, 255, 255);
+}
+.grocerybutton{
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+}
+.grocerybutton1{
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: inline-flex;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(235, 23, 0);
+    border-bottom-color: white;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    height: 40px;
+    width: 138.9px;
+    text-decoration: none;
+}
+.grocerybutton2{
+    display: block;
+    flex-grow: 1;
+    max-width: 100%;
+    opacity: 1;
+    padding: 0px 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+.grocerybutton3{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+
+}
+.grocerybutton4{
+    flex-grow: 2;
+    min-width: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.grocerybutton5{
+    width: 100%;
+    text-transform: none;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+    font-family: "doornormal";
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    line-height: 22px;
+}
+.convenience{
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+
+}
+.conveniencecnt{
+    padding: 60px 20px 20px 20px;
+    margin-bottom: -40px;
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    align-items: center;
+    box-sizing: border-box;
+}
+.conveniencecnt2{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    max-width: 1184px;
+    align-content: space-between;
+    box-sizing: border-box;
+}
+.conveniencecnt3{
+    max-width: 400px;
+    margin: 115px 0px;
+    display: block;
+    box-sizing: border-box;  
+}
+.conveniencecnt4{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-bo        
+}
+.conveniencehead{
+    text-transform: none;
+    display: block;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "doorbold";
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    line-height: 40px;
+    margin: 20px 0px 0px;
+    width: 360px;
+    text-transform: none;                             
+}                        
+.conveniencetxt1{
+    margin-top: 20px;
+    text-transform: none;
+    display: block;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "doornormal";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    height: 44px;
+    width: 400px;
+    line-height: 22px;
+    text-align: left;
+}                    
+.conveniencebutton{
+    margin-top: 30px;
+    box-sizing: border-box;            
+    display: block;
+    height: 40px;
+    width: 400px;
+    text-align: left;
+}                    
+.conveniencebutton1{
+    position: relative;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 0px;
+    display: inline-flex;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;                                                                   
+    text-align: center;
+    background-color: rgb(235, 23, 0); 
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    border-image-width: 1;
+    max-width: 100%;
+}   
+.conveniencebutton2{
+    display: block;
+    flex-grow: 1;
+    max-width: 100%;
+    opacity: 1;
+    padding: 0px 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 22px;  
+    max-width: 100%;
+    text-align: center;
+}
+.conveniencebutton3{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 22px;
+    text-align: center;                               
+}
+.conveniencebutton4{
+    flex-grow: 2;
+    min-width: 0px;
+    display: flex;
+    box-sizing: border-box;
+    cursor: pointer;
+    justify-content: center;
+    min-width: 0px;
+    text-align: center;
+    height: 22px;
+    padding-inline: 12px;
+}
+.conveniencebuttontxt{
+    width: 100%;
+    color: whitesmoke;
+    font-family: "doornormal";
+    text-transform: none;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 700;
+    height: 22px;
+    letter-spacing: -0.01px;
+    line-height: 22px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    white-space-collapse: collapse;
+}
+.cover{
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    
+}
+.coverimg{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+         
+       
