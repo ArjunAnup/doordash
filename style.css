@@ -1,41 +1,49 @@
 
 @font-face{
     font-family: "doorbold";
-    src: url(fonts/TTNorms-Bold.woff2);
+    src: url(fonts/TTNorms-Bold.woff2);                                                                                                                                           
 }
 @font-face{
     font-family: "doornormal";
     src: url(fonts/TTNorms-Medium.woff2);
 }
 body{
-    margin: 0;
+    margin: 0;  
+    padding: 0;
+     box-sizing: border-box ;
+    overflow-x: hidden;
 }
 .full{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center; 
 }
 .head{
+    box-sizing: border-box;
     display: flex;
     flex-flow: column;
     align-items: center;
     width: 100%;
     z-index: 1;
+    object-fit: cover;
     justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png);
+    padding: 0px 8px;
     height: 650px;
+    background-position-x: 50%;
+    background-position-y: 50%;
 }
+                                                                                                                    
 
 .head1{
     display: flex;
     justify-content: center;
     top: 0;
     margin-top: 25px;
-
     position: absolute;
 }
 .headlogo{
@@ -51,7 +59,7 @@ body{
 }
 .inner{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
 }
@@ -81,15 +89,25 @@ body{
     right: 0px;
     top: 0px;
     z-index: 1;
+    margin-top: 16px;
+    box-sizing: border-box;
 }
 .header_right1{
     flex: 1 1 0%;                                                                                   
     display: flex;
     justify-content: flex-end;
-    
+    gap: 8px;
+    flex-grow: 1;
+    padding: 0px 24px 0px 16px;  
+    box-sizing: border-box;
 }
 a{
-    position: relative;
+    color: #fff;
+    text-decoration: none;
+             
+}
+a{
+     /* position: relative;
     max-width: 100%;         
     margin-top: 20px;
     padding: 0px;
@@ -104,45 +122,49 @@ a{
     background-color: #eb1700ff;
     color: #fff;
     font-family: normal;
-    text-decoration: none;
-    
-}
+    text-decoration: none; */
+     
+} 
 .header_right1 span{
     display: block;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     max-width: 100%;
-    transition: opacity 0.15s ease-in-out;
-    opacity: 1;
     padding-inline: 12px;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "normal";
+    font-family: "doornormal";
     font-size: 18px;
     font-weight: 700;
     letter-spacing: -0.01px;
     margin-bottom: 2px;
+    background-color: rgb(235, 23, 0);
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    padding: 8px;
 }
 .header_right1 a:last-child {
     background-color: #fff;
     color: #606060ff;
 }
-.header_right1 a span {
+.header_right1 span span{
     display: block;
     flex-grow: 1;
-    opacity: 1;
     padding-inline: 12px;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "boldf";
     font-size: 18px;
     font-weight: 700;
     letter-spacing: -0.01px;
     margin-bottom: 2px;
     font-family: "doornormal";
+    background-color: #fff;
+    
 }
 .address{
     display: flex;
@@ -182,7 +204,6 @@ a{
 }
 .delivery{
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
     width: 24px;
     z-index: 1;
@@ -286,22 +307,19 @@ a{
         fill: none;
     }
     .sicDh {
-    position: relative;
-    max-width: 100%;
-    margin-top: 16px;
-    padding: 1px 6px 1px 6px;
-    border-radius: 100px;
-    display: inline-flex;
-    width: auto;
-    align-items: center;
-    justify-content: flex-start;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    user-select: none;
-    text-decoration: none;
-    text-align: center;
-    height: 32px;
+        position: relative;
+        max-width: 100%;
+        margin-top: 16px;
+        padding: 1px 6px 1px 6px;
+        border-radius: 100px;
+        display: inline-flex;
+        width: auto;
+        align-items: center;
+        justify-content: flex-start;
+        border: none;
+        text-decoration: none;
+        text-align: center;
+        height: 32px;
     }
     .jONJUs {
     display: block;
@@ -335,14 +353,10 @@ a{
     flex-shrink: 0;
 }
 .kXCksQ {
-    -webkit-box-flex: 2;
     flex-grow: 2;
     min-width: 0px;
     display: flex;
     justify-content: center;
-}
-.kXCksQ > * {
-    width: 100%;
 }
 .itAsYp {
     color: currentcolor;
@@ -359,7 +373,7 @@ a{
 }
 .secondset{
     max-width: 100%;
-    height: 636px;
+    /* height: 636px; */
     width: 1104px;
     margin: 0px 168px;
 
@@ -374,21 +388,19 @@ a{
 }
 .secondset2{
     display: flex;
-    height: 100%;
+    /* height: 100%; */
     flex-direction: row;
 
 }
 .bike{
     display: flex;
-    width: 320px;
+    /* width: 320px; */
     height: 420px;
     min-width: 360px;
     flex-flow: column;
     padding: 16px;
 }
 .bike1{
-    height: 154px;
-    width: 154px;
     margin-right: 64px;
 }
 .bikecnt{
@@ -409,7 +421,6 @@ a{
     cursor: pointer;
     background-color: transparent;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
 }
 .bikewritting{
@@ -523,7 +534,6 @@ a{
     display: flex;
     align-items: center;
     font-size: 13.3333px;
-    font-stretch: 100%;
     justify-content: center;
 }
 .merchant_button_txt{
@@ -1288,7 +1298,7 @@ a{
     display: flex;
     justify-content: center;
     background-color: rgb(254, 241, 238);
-    padding: 60px 20px 40px;
+    padding: 60px 0px 40px;
     width: 100%;
 }
 .dos_txt{
@@ -1306,7 +1316,7 @@ a{
     max-width: 500px;
     height: 80px;
     text-align: center;
-}
+}                                                      
 .dos1{
     display: flex;
     flex-direction: column;
@@ -1418,7 +1428,10 @@ a{
     background-color: rgb(235, 23, 0);
     min-height: 40px;
     max-width: 100%;
-
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius:9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
 }
 .dosbutton2{
     display: block;
@@ -1560,6 +1573,7 @@ a{
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
     min-height: 40px;
+    background-color: rgb(235, 23, 0);
 }
 .flowerbutton2{
     display: block;
@@ -1861,7 +1875,7 @@ a{
     opacity: 1;
     box-sizing: border-box;
     cursor: pointer;
-    padding: 0px 12px 0px 12px;
+    padding: 12px 12px 12px 12px;
     text-align: center; 
 }
 .petsbutton3{
@@ -2340,39 +2354,650 @@ a{
     letter-spacing: -0.01px;
 }
 .city{
-    
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 16px;
+    column-gap: 16px;
+}
+.city span{
+    font-family: "doornormal";
+    color: black;
+}
+/* .city1{
+    width: 20%;
+}
+.city1 span{
+    display: block;
+    flex-grow: 1;
+    max-width: 100%;
+    opacity: 1;
+    color: #191919ff;
+    font-family: "doornormal";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+} */
+/* .city1 a{
+    text-decoration: none;
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    min-height: 40px;
+    width: 100%;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: white;  
+} */
+.seemore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 60px;
+    margin-top: 20px;
+}
+.seemore1{
+    margin-right: 8px;
+    text-transform: none;
+    display: block;
+    margin-right: 0px 8px 0px 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    font-family: "doorbold";
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    line-height: 24px;
+    width: 86.925px;
+    height: 24px;
+}
+.seemorebutton{
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    /* padding: 0px; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background-color: rgb(241, 241, 241);
+    /* border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px; */
+    font-size: 13.3333px;
+    height: 40px;
+}
+.end{
+    width: 100vw;                    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(25, 25, 25); 
+    box-sizing: border-box;       
+    height: 896px;        
+}
+.endcnt{
+    width: 1184px;
+    display: block;
+}
+.endcnt2{
+    max-width: 1160px;
+    margin: 0px 12px 0px 12px;
+    padding: 0px 20px 0px 20px;                                           
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}     
+.endcnt3{
+    flex: 1 1 0%;
+    box-sizing: border-box;
+    padding: 32px 0px;                                                                                  
+} 
+.endcnt4{
+    color: #fff;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "doorbold";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    line-height: 22px;
+    margin: 0px 0px 8px;        
+}
+.endcnt5{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    column-gap: 12px;
+    row-gap: 12px;
+    height: 252px;
+}
+.pc1{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    box-sizing: border-box;                                                                       
+    height: 252px;    
+     width: 271px;
+}
+.alcohol_australia1{
+    color: rgb(196, 196, 196);
+    font-family: "doornormal";
+    font-weight: 500;
+    font-size: 14px; 
+    letter-spacing: -0.01px;
+    line-height: 20px;
+    text-decoration-color: rgb(196, 196, 196);
+    height: 20px;
+}
+.alcohol_australia{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+.pc2{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    box-sizing: border-box;
+    height: 252px;
+   
+}
+.dashmart{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+.dashmart1{
+    color: rgb(196, 196, 196);
+    font-family: "doornormal";
+    font-weight: 500;
+    font-size: 14px; 
+    letter-spacing: -0.01px;
+    line-height: 20px;
+    text-decoration-color: rgb(196, 196, 196);
+    height: 20px;
+}
+.pc3{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    box-sizing: border-box;
+    height: 252px;
+}
+.pc4{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    box-sizing: border-box;
+    height: 252px;
+}
+.lastcnt{
+    display: flex;
+    box-sizing: border-box;
+    height: 454px;
+    flex-direction: column;
+}                 
+.lastcnt1{
+    flex: 1 1 0%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    column-gap: 12px;
+    row-gap: 12px;
+    height: 454px;
+    gap: 80px;
+}  
+.lastcnt2{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 32px;
+}          
+.get{
+    color: #fff;
+    font-family: "doorbold";
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    line-height: 22px;
+    margin: 0px 0px 8px;
+    height: 22px;    
+}
+.get1{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    box-sizing: border-box;
+}
+.get2{
+    color: #fff;
+    font-family: "doorbold";
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    line-height: 22px;
+    margin: 0px 0px 8px;
+    height: 22px;    
+}
+.get3{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    box-sizing: border-box;
+}
+.gett{
+    margin-top: 32px;
+}
+.get4{
+    color: #fff;
+    font-family: "doorbold";
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    line-height: 22px;
+    margin: 0px 0px 8px;
+    height: 22px;  
+}
+.get5{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    box-sizing: border-box;
+}
+.gett1{
+    margin-top: 32px;
+}
+.download{
+    flex: 1 1 0%;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.download1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 32px;
+    width: 160px;
+}
+.appstore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: rgb(73, 73, 73);
+    padding: 2px 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.appstore svg{
+    height: 48px;
+    width: 144px;
+    fill: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+.playstore{
+    margin-top: 12px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 73, 73);
+    box-sizing: border-box;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 2px 8px;
+    display: flex;
+}
+.playstore svg{
+    height: 48px;
+    width: 144px;
+    fill: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+.footerlast{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 32px 0px; 
+}
+.footerlast1{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: row;
+}
+.footerogo{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    box-sizing: border-box;
+    height: 18px;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+.footlogo svg{
+    box-sizing: border-box;
+    width: 32px;
+    height:18px;
+    fill: rgb(255, 255, 255);
+}
+.service{
+    margin-left: 16px;
+    color: rgb(196, 196, 196);
+    font-family: "doornormal";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    line-height: 18px;                   
+}
+.lang{
+    padding: 0px 12px;
+    margin-right: 180px;
+    transform: translateY(-15px);
+}
+.lang1{
+    width: 150px;
+    box-sizing: border-box;   
+}
+.lang2{
+    width: 100%;
+    box-sizing: border-box;
+    display: block;                                              
+}
+.lang3{
+    display: flex;
+    min-height: 32px;
+    box-sizing: border-box;
+}
+.lang4{
+    font-family: "doornormal";
+    font-size: 14px;
+    display: flex;
+    letter-spacing: -0.01px;
+    padding: 4px 12px;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius:9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    background-color: white;
+    line-height: 20px;
+    width: 150px;  
+    height: 32px;
+    /* z-index: 1;  */
+}
+.globe{
+    color: black;
+    margin-top: 5px;
+    box-sizing: border-box;
+    font-family: "doornormal";
+    font-size: 14px;
+    font-weight: 500;
+}
+.eng{
+    margin: 5px 0px 0px 5px;
+    font-family: "doornormal";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    line-height: 20px;
+    align-items: center;
+    border: none;
+    width: 100%;
+    border: none;                    
+}
+.dropdown{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    max-height: 100%;
+    min-height: 8px;
+    background: transparent;
+    bottom: 0px;
+    margin-right: -10px;
+    z-index: 1;
+}
+.dropdown svg{
+    margin-left: -20px;
+    margin-top: 15px;
+}
+.socialmedia{
+    display: flex;
+    gap: 10px;
+    transform: translateX(100px);
+    margin-top: 8px;
+    justify-content: center;
 }
 
 
+@media (max-width: 1183px){
+    .secondset{
+        max-width: 486px;
+        margin: 0px auto;
+    }
+    .secondset2{
+        flex-direction: column;
+        align-items: center;
+        max-width: 470px;
+    }
+    .secondset1{
+        width: 486px;
+        margin-top: 40px;
+    }
+    .bike{
+        flex-flow: row;
+        width: 470px;
+        height: 216px;                               
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                       
+    }
+    .para_1{
+        text-align: left;
+    }
+    .para_2{
+        text-align: left;
+    }
+    .doorarrow{
+        justify-content: flex-start;
+        padding: 0px;
+    }
+    .bikecnt{
+        width: 250px;
+    }
+    .bikewritting{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        font-size: 14px;
+    }
+    .bikeimg{
+        margin: 0px;
+        height: 124px;
+        width: 124px;
+    }
+    .merchant{
+        flex-flow: row;
+        width: 470px;
+        height: 216px;
+    }
+    .merchant1 img{
+        width: 124px;
+        height: 124px;
+    }
+    .merchant_button{
+        justify-content: flex-start;
+    }
+    .mer_head1{
+        text-align: left;
+    }
+    .mer_head2{
+        text-align: left;
+    }
     
+    .merchant_button_txt {
+        font-size: 14px;  
+    }
+    .experience{
+        flex-flow: row;
+        width: 470px;
+        height: 216px;
+        transform: translateX(-30px);
+    }
+    .experience1 img{
+        width: 124px;
+        height: 124px; 
+        /* margin-left: 50px;      */
+    }
+    .experience_button{
+        justify-content: flex-start;
+    }
+    .button_txt{
+        font-size: 14px;
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+    .experience_txt1{
+        text-align: left;
+    }
+    .experience_txt2{
+        text-align: left;
+    }
+    .sec_2_2{
+        margin-top: -60px
 
-    
+    }
+    /* dash pass is delivery for less */
 
+    .lazylogopht{
+        max-width: 682.4px;
+    }
+    .dosimg1{
+        height:551.2px;
+    }
+    .flowerimg{     
+        height: 551.2px;
+    }
+    .minibarimg{
+        height: 551.2px;
+    }
+    .petsimg{
+        height: 551.2px;
+    }
+}
+    /* .head{
+        background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png);
+        height: 550px;
+        padding: 0px 8px;
+    } */
+     @media (max-width: 1024px){
+        .lazylogopht{
+            width: 524px;
+        }
+        .dosimg1{
+            height: 472px;
+        }  
+        .flowerimg{
+            height: 472px;
+        }
+        .minibarimg{
+            height: 472px;
+        }
+        .petsimg{
+            height: 472px;
+        }
+        .businessimg1{
+            width: 524px;
+        }
 
+     }
+     @media (max-width: 768px){
+       .photo1{
+        width: 293.84px;
+        height: 500px;
+     } 
+     .lazylogopht{                     
+        width: 302.88px ;
+        height: 500px;
+        object-fit: cover;
+     }                                   
+     .dosimg1{
+        height: 344px;
+     }
+     .flowerimg{
+        height: 344px;
+    }
+    .minibarimg{
+        height: 344px;
+    }
+    .petsimg{
+        height: 344px;
+    }
+    .bagimg1{
+        width: 285.08px;
+    }
+    .businessimg1{
+        width: 307.17px;
+        /* padding-left: 20px; */         
+    }
+    .growtxt{
+        width: 360px;             
+    }
+    .businesscnt1{
+        transform: translateX(20px); 
+    }      
+    .headlogo svg{
+        width: 32px;
+        height: 18px;
+    }               
+    .logowrite svg{
+        width: 112px;
+        height: 18px;
+    }
+    .containerwritting{
+        margin-bottom: 22px;
+        transform: translateX(10px);
+    }
+    .containerwritting h1{
+        max-width: 350px;
+        letter-spacing: 0px;
+        font-size: 22px;
 
+    }
 
-
-
-
-
-
-
-
-
-                                           
+                   
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
