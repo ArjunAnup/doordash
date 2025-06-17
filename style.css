@@ -2966,6 +2966,14 @@ a{
         width: 293.84px;
         height: 500px;
      }
+     .sec_4txt {
+        width: 374.16px;
+
+     }
+     .dashdeliverycntpara {
+        width: 365.13px;
+     }
+
      .cntapp{
         display: block;
      }
@@ -3182,6 +3190,7 @@ a{
         .secondset2{
             width: 402px;
             height: 688px;
+            margin-left: 10px;
         }
         .bikeimg{
             width: 88px;
@@ -3218,7 +3227,7 @@ a{
         .experience1 img{
             width: 88px;
             height: 88px;
-        }
+        }    
         .experience1{
             margin-right: 32px;
             margin-left: 30px;
@@ -4081,13 +4090,20 @@ a{
         }
         .lang2{
             height: 0px;
-        } 
-                                                                                            
+        }
     }
-                                         
-                                                                                   
-                                                                               
+    @media (max-width: 375px){
+        .growbutton{
+            width: 335px;
+        }
+        .growtxt{
+            width: 335px;
+            height: 60px;
+        }
+        /* .growbutton1{
+            margin-top: 20px;
 
-                                                                                                                                                                                                                                                                                                                    
-
+        } */
+    }
+                                                                                                      
                                                                                                
