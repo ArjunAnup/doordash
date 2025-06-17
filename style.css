@@ -1953,12 +1953,13 @@ a{
     display: block;
     height: 544px;
     box-sizing: border-box;
-    z-index: 1;
+    /* z-index: 1; */
+    background-color:rgb(254, 241, 238)
     
 }
 .unlockingcnt1{
     flex-direction: row;
-    justify-content: center;
+    justify-content: center;                      
     margin-bottom: -60px;
     display: flex;
     padding: 20px;
@@ -2590,6 +2591,7 @@ a{
     line-height: 22px;
     margin: 0px 0px 8px;
     height: 22px;    
+    margin-top: 20px;
 }
 .get1{
     display: flex;
@@ -2649,7 +2651,7 @@ a{
     flex: 1 1 0%;
     display: flex;
     justify-content: flex-end;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-sizing: border-box;
 }
 .download1{
@@ -2701,7 +2703,7 @@ a{
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 32px 0px; 
+    padding: 32px 0px 0px; 
 }
 .footerlast1{
     display: flex;
@@ -2841,6 +2843,7 @@ a{
     .secondset1{
         width: 486px;
         margin-top: 40px;
+        padding: 0px;
     }
     .bike{
         flex-flow: row;
@@ -2955,13 +2958,7 @@ a{
         }
         .minibarimg{
             height: 472px;
-        }
-        .petsimg{
-            height: 472px;
-        }
-        .businessimg1{
-            width: 524px;
-        }
+         }
 
      }
      @media (max-width: 768px){
@@ -2998,10 +2995,7 @@ a{
     }
     .growtxt{
         width: 360px;             
-    }
-    .businesscnt1{
-        transform: translateX(20px); 
-    }      
+    }     
     .headlogo svg{
         width: 32px;
         height: 18px;
@@ -3118,6 +3112,7 @@ a{
         .sec_3{
             display: flex;
             flex-direction: column-reverse;
+            transform: translateY(-165px);
         }
         
         .sec_4head {                                                                             
@@ -3135,7 +3130,7 @@ a{
             width: 385px;
         }
         .sec_4{
-            height: 200px;
+            height: 50px;
         }
         .sec_4_1 {
             transform: translateY(-150px);
@@ -3229,7 +3224,7 @@ a{
             margin-left: 30px;
         }
         .sec_2_2{
-            margin-top: 0px;
+            margin-top: 155px;
         }       
         .secimg2cnt{
             transform: translateY(-150px);
@@ -3338,6 +3333,8 @@ a{
             display: flex;
             flex-direction: column;
             height: 600px;
+            transform: translateY(-20px);
+            margin-left: 20px;
         }
         .growhead{
             font-size: 24px;
@@ -3355,6 +3352,7 @@ a{
         }
         .business{
             margin-top: -100px;
+            z-index: 1;
 
         }
         .businesscnt{
@@ -3411,13 +3409,14 @@ a{
         .lastcnt2{
             align-items: center;
             transform: translateY(650px);
+            /* padding: 0px; */
         }
         .gett{
             margin: 0px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 32px 0px 0px;
+            /* padding: 32px 0px 0px; */
             transform: translateY(780px);
         }
         .get3{
@@ -3468,7 +3467,7 @@ a{
             grid-template-rows: auto auto auto;
             grid-template-columns: auto 1fr auto;
             column-gap: 8px;
-            padding: 8px;
+            padding: 8px 0px;
         }
         .newheadlogo{
             align-self: center;
@@ -3999,8 +3998,8 @@ a{
         .minibarbutton1{
             margin: 0px;
             margin-top: 20px;
-            width: 110.63px;
-            height: 32px;
+            min-width: 110.63px;
+            min-height: 32px;
 
         }
         .minibartxt1{
@@ -4051,16 +4050,41 @@ a{
             margin-top: -20px;
         }
         .flowerbutton1{
-            width: 111.59px;
-            height: 32px;
+            min-width: 111.59px;
+            min-height: 32px;
         }
         .flowerbutton5{
             font-size: 14px;
-            height: 20px;
+            /* height: 20px; */
         }
-                                  
-    }                                                                                                                                                                                                                                                                                      
-
+        .findbutton{
+            width: 130.73px ;
+            height: 32px;
+        }
+        .find_button3{
+            font-size: 14px;
+        }
+        .find_button1{
+            height: 17px;
+            width: 130px;
+        }       
+        .findbutton{
+            min-width: 130.73px;
+            min-height: 32px;
+        }    
+        .download1{
+            transform: translateY(130px);
+            margin-right: 100px;
+        } 
+        .lang1{
+            height: 0px;
+        }
+        .lang2{
+            height: 0px;
+        } 
+                                                                                            
+    }
+                                         
                                                                                    
                                                                                
 
