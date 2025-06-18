@@ -4204,13 +4204,13 @@ a{
             width: 360px;
             height: 240px;
             padding: 16px 0px 16px 16px;
-            margin: 0px;
         } 
          .secondset{
             width: 376px;
         }          
          .secondset2{
             width: 376px;
+            margin: 0px;
         }
         .merchant{
             width: 360px;
@@ -4228,7 +4228,67 @@ a{
             width: 360px;
             padding: 16px 0px 16px 16px;       
         }
-                   
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           */
+        .experience_cnt{
+            width: 208px;
+            height: 224px;
+        }
+        .experience_button{
+            width: 208px;
+        }
+        .find_button{
+            width: 335px;
+        }
+        .sec_4head2{
+            width: 335px;
+        }
+        .dashdeliverycnt{
+            width: 355px;
+        }
+        .dashbutton{
+            width: 335px;
+        }
+        .conveniencebutton{
+            width: 335px;
+        }
+        .unlockingcnt2{
+            width: 335px;
+            margin: 0px;
+            margin-right: 20px;
+        }
+        .unlockingbutton{
+            width: 335px;
+        }
+        .unlockinghead2{
+            width: 335px;
+        }
+        .endcnt{
+            width: 375px;
+
+        }
+        .download1{
+            margin: 0px;
+            margin-right: 70px;
+        }
+        .endcnt3{
+            margin-left: 10px;
+        }
+        .lastcnt2{
+            margin-left: 10px;
+        }      
+        .gett{
+            margin-left: 10px;
+        }
+        .gett1{
+            margin-left: 10px;           
+        }
+        .socialmedia{
+            margin-right: 50px;
+        }
+        .lang4{
+            transform: translateX(60px);
+        }
+        
+    
+          
 
     }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
