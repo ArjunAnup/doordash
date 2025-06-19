@@ -106,8 +106,8 @@ a{
     text-decoration: none;
              
 }
-a{
-     /* position: relative;
+/* a{
+     position: relative;
     max-width: 100%;         
     margin-top: 20px;
     padding: 0px;
@@ -122,9 +122,9 @@ a{
     background-color: #eb1700ff;
     color: #fff;
     font-family: normal;
-    text-decoration: none; */
+    text-decoration: none;
      
-} 
+}  */
 .header_right1 .signout{
     display: block;
     /* flex-grow: 1; */
@@ -649,6 +649,7 @@ a{
 }
 .sec_2{
     width: 100%;
+    margin-top: 60px;
 
 }
 .sec_2_1{
@@ -2831,6 +2832,9 @@ a{
 
 
 @media (max-width: 1440px){
+    .footerlast{
+        transform: translateY(20px);
+    }
     .unlockingcnt{
         background-color: unset;
         z-index: 1;
@@ -2951,6 +2955,15 @@ a{
         padding: 0px 8px;
     } */
      @media (max-width: 1024px){
+        .lastcnt2{
+            margin-top: -20px;
+        }
+        .end{
+            height: 1040px;
+        }
+        .petsimg{
+            height: 472px;
+        }
         .lazylogopht{
             width: 524px;
         }
@@ -2970,10 +2983,17 @@ a{
             z-index: 1;
             background-color: unset;
          }
-         
+         .footerlast{
+            transform: translateY(150px);
+         }
+    
 
      }
      @media (max-width: 768px){
+        .footerlast{
+            transform: translateY(140px);
+        }
+          
        .photo1{
         width: 293.84px;
         height: 500px;
@@ -2989,6 +3009,9 @@ a{
      .cntapp{
         display: block;
      }
+     .cntapp3{
+        display: none;
+    }
      .lazylogopht{                     
         width: 302.88px ;
         height: 500px;
@@ -3033,7 +3056,7 @@ a{
         letter-spacing: 0px;
         font-size: 22px;
     }
-        .cntapp3 {
+        /* .cntapp3 {
         background-color: rgb(247, 247, 247);
         border-bottom-color: rgb(241, 241, 241);
         border-bottom-left-radius: 12px;
@@ -3052,8 +3075,38 @@ a{
         box-sizing: border-box;
         width: 318px;
     }
+    .cntappin {
+        display: flex;
+        text-align: left;
+        box-sizing: border-box;
+        width: 318px;
                     
-}   
+} */
+/* .continue {
+            position: relative;
+            max-width: 100%;
+            margin: 0px;
+            padding: 0px;
+            display: flex
+;
+            min-height: 40px;
+            align-items: center;
+            background-color: rgb(235, 23, 0);
+            border-bottom-color: rgb(255, 255, 255);
+            border-bottom-left-radius: 9999px;
+            border-bottom-right-radius: 9999px;
+            border-top-left-radius: 9999px;
+            border-top-right-radius: 9999px;
+            font-family: "doorbold";
+            font-size: 13.3333px;
+            justify-content: center;
+            margin-top: 16px;
+            text-align: center;
+            text-transform: none;
+            width: 318px;
+            border: none;
+} */
+     }
     /* mobile */
 
      @media (max-width: 425px){
@@ -3154,6 +3207,7 @@ a{
             width: 385px;
             height: 180px;
             object-fit: cover;
+            margin-left: 8px;
         }
         .sec_3{
             display: flex;
@@ -4131,6 +4185,14 @@ a{
         }
     }
     @media (max-width: 375px){
+        .dashdeliveryhead{
+            width: 301.5px;
+            letter-spacing: -0.01px;
+            line-height: 28px;
+        }
+        .secimg2{
+            background-color: rgb(254, 241, 238);
+        }
         .growbutton{
             width: 335px;
         }
@@ -4138,10 +4200,10 @@ a{
             width: 335px;
             height: 60px;
         }
-        .growbutton1{
-            /* margin-top: 20px; */
+        /* .growbutton1{
+            margin-top: 20px;
 
-        }
+        } */
         .businessimg1{
             width: 335px;
             height: 180px;
@@ -4202,6 +4264,7 @@ a{
         }
         .lazylogopht{
             width: 335px; 
+            margin-bottom: 20px;
         }
         .secimg2cnt2{
             width: 335px;
@@ -4211,12 +4274,15 @@ a{
         .dashdeliverycntpara{
             width: 335px;
             height: 60px;
+            margin-top: 10px;
         }
         .secimg2cnt{
             min-width: 0%;
+            padding: 50px 20px 20px 20px;
         }
         .photo1{
             width: 335px;
+            margin-left: -1px
         }
         .lazy_load{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
             width: 335px;                                                                                                                                                                                                                                                                                                                                                       
@@ -4284,6 +4350,7 @@ a{
         }
         .dashbutton{
             width: 335px;
+            margin-top: 20px;
         }
         .conveniencebutton{
             width: 335px;
@@ -4330,6 +4397,5 @@ a{
         }  
         .cntapp2{
             margin: 20px 20px 0px 20px;
-        }
-                                                                   
-    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+        }                         
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
